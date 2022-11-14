@@ -1,0 +1,10 @@
+/* Add application styles & imports to this file! */
+body {
+  background-image: radial-gradient(lightsalmon, lightblue, lightgreen);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+button {
+  padding: .5rem;
+}

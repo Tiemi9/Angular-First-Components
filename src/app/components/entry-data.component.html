@@ -1,0 +1,16 @@
+
+<!--two way data bainding: usamos o property binding para associar uma propriedade do componente com a propriedade do html [value], depois o caminho inverso (event data binding), fizemos um evento dispara uma ação para a parte lógica (input) -->
+<input 
+  type="text" 
+  [value]="placeHolder" 
+  (input)="placeHolder = $any($event.target).value"
+>
+<p>{{placeHolder}}</p>
+
+<!--Outra maneira de fazer, mais fácil inclusive, é usando o ngModel-->
+<input 
+  type="text" 
+  [(ngModel)]="placePass"
+>
+<p [style.color]="color">{{placePass}}</p>
+

@@ -1,0 +1,21 @@
+<hello name="{{ name }}"></hello>
+<menu-component></menu-component>
+
+<p>
+  Start editing to see some magic happen :)
+</p>
+<h1>That's Really Nice!!!</h1>
+
+<!--DATA BINDING (Assiciação de dados)-->
+
+<!--Podemos passar a propriedade de qualquer uma dessas formas-->
+<!--INTERPOLAÇÃO -->
+<my-button label = "{{buttonLabel}}"></my-button> <!-- com {{}} entnde que é uma variável, comunicando-se com outro elemento-->  
+<my-button label = "Hello Wolrd!"></my-button> <!--nesse caso espera uma string-->
+
+<!-- PORPERTY BINDING: recomendado pela documentação-->
+<my-button [label] = "buttonSecond"></my-button><!-- com [] entnde que é uma variável, comunicando-se com outro elemento-->  
+<my-button [label] = "'Learn More'"></my-button> <!--Com aspas simples irá renderizar como texto-->
+
+<!--TWO WAY DATA BINDING-->
+<app-entry-data></app-entry-data>
